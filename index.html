@@ -15,18 +15,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-  <!-- Background Blur Decoration -->
-  <div class="blob blob-teal"></div>
-  <div class="blob blob-gold"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- Navigation -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#" class="nav-logo">
+      <a href="#main" class="nav-logo" aria-label="Badal Biswa home">
         <span class="logo-accent">&lt;</span>B.Biswa<span class="logo-accent"> /&gt;</span>
       </a>
-      <ul class="nav-links">
+      <ul class="nav-links" id="primary-navigation">
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#experience" class="nav-link">Experience</a></li>
         <li><a href="#playground" class="nav-link">Simulator</a></li>
@@ -35,17 +32,17 @@
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
       <div class="nav-cta">
-        <a href="Profile (16).pdf" target="_blank" class="btn btn-outline btn-sm">
+        <a href="Profile (16).pdf" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
           <i class="fa-solid fa-file-pdf"></i> Resume
         </a>
       </div>
-      <button class="mobile-toggle" aria-label="Toggle navigation">
+      <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
         <i class="fa-solid fa-bars"></i>
       </button>
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <main id="main">
   <header class="hero-section">
     <div class="section-container hero-grid">
       <div class="hero-content">
@@ -54,22 +51,22 @@
           <span class="badge badge-gold">Finance & Management</span>
         </div>
         <h1 class="hero-title">
-          Engineering the <span class="text-gradient-teal">Future</span> of <span class="text-gradient-gold">Finance</span>.
+          I build analytical tools at the intersection of <span class="text-gradient-teal">software</span> and <span class="text-gradient-gold">finance</span>.
         </h1>
         <p class="hero-subtitle">
-          Student at the University of Lethbridge bridging the gap between rigorous software architecture and data-driven financial analysis.
+          University of Lethbridge student combining Computer Science, Finance, and hands-on operations leadership to turn messy business inputs into clear, data-driven decisions.
         </p>
         <div class="hero-actions">
           <a href="#playground" class="btn btn-primary">
-            <i class="fa-solid fa-chart-line"></i> FinTech Simulator
+            <i class="fa-solid fa-chart-line"></i> Try the Simulator
           </a>
           <a href="#contact" class="btn btn-secondary">
             Let's Connect <i class="fa-solid fa-arrow-right"></i>
           </a>
         </div>
         <div class="hero-socials">
-          <a href="https://github.com/badalbiswa" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/badal-biswa-87a2261ba" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/badalbiswa" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/badal-biswa-87a2261ba" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
           <a href="mailto:badalbiswa03@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
         </div>
       </div>
@@ -83,15 +80,10 @@
           <div class="stat-icon"><i class="fa-solid fa-code-branch"></i></div>
           <div class="stat-info">
             <span class="stat-num">U of L</span>
-            <span class="stat-label">B.Sc. & B.Mgt. Candidate</span>
+            <span class="stat-label">CS & Finance Candidate</span>
           </div>
         </div>
       </div>
-    </div>
-    <div class="hero-wave">
-      <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,100L1360,100C1280,100,1120,100,960,100C800,100,640,100,480,100C320,100,160,100,80,100L0,100Z" fill="#080b10"></path>
-      </svg>
     </div>
   </header>
 
@@ -105,16 +97,16 @@
       <div class="about-grid">
         <div class="about-card glass">
           <div class="card-icon icon-teal"><i class="fa-solid fa-laptop-code"></i></div>
-          <h3>Computer Science</h3>
+          <h3>Software & Data</h3>
           <p>
-            Designing clean algorithms, handling database structures, and engineering robust software products. I look at financial problems through the lens of computational efficiency, automation, and scale.
+            Building clean interfaces, database-backed workflows, and practical analytics. I approach financial and operational problems through automation, structure, and measurable outcomes.
           </p>
         </div>
         <div class="about-card glass">
           <div class="card-icon icon-gold"><i class="fa-solid fa-scale-balanced"></i></div>
           <h3>Finance & Management</h3>
           <p>
-            Understanding capital markets, asset pricing, risk analysis, and corporate strategy. I leverage financial principles to build analytical models that evaluate value, predict trends, and optimize resources.
+            Studying financial analysis, risk, accounting, and resource planning. I use that foundation to model tradeoffs, forecast demand, and explain decisions in business terms.
           </p>
         </div>
       </div>
@@ -123,7 +115,7 @@
           Currently pursuing a dual degree in <strong>Computer Science (B.Sc.)</strong> and <strong>Finance (Bachelor of Management)</strong> at the <strong>University of Lethbridge</strong>.
         </p>
         <p>
-          I am driven by the belief that the future of business belongs to those who can both model financial risk and program the systems to handle it. Whether it is building automated pipelines, modeling portfolio growth, or managing team workflows, I thrive on translating complex inputs into structured, profitable outcomes.
+          My experience combines classroom work in software and finance with daily responsibility for staff coordination, inventory, cash handling, and customer resolution. I am strongest where technical analysis meets practical execution.
         </p>
       </div>
     </div>
@@ -150,20 +142,20 @@
         </div>
 
         <p class="exp-summary">
-          Spearheading shift management, supply chain forecasting, and end-of-day financial compliance in a fast-paced retail food environment. Applying rigorous data-driven systems to reduce inventory loss and optimize performance metrics.
+          Lead shift operations, inventory ordering, staff training, customer resolution, cash reconciliation, and daily reporting in a fast-paced retail food environment.
         </p>
 
         <div class="exp-grid">
           <div class="exp-kpi-card">
             <div class="kpi-num text-gradient-teal">+17%</div>
             <div class="kpi-label">Sales Growth</div>
-            <p class="kpi-desc">Resolved customer escalations promptly, improving service delivery and customer retention scores.</p>
+            <p class="kpi-desc">Resolved customer concerns quickly and professionally, supporting stronger service delivery.</p>
           </div>
 
           <div class="exp-kpi-card">
             <div class="kpi-num text-gradient-gold">-20%</div>
             <div class="kpi-label">Stock Shortages</div>
-            <p class="kpi-desc">Refined inventory tracking and forecasting algorithms, saving overhead and reducing stock volatility.</p>
+            <p class="kpi-desc">Improved ordering discipline and inventory organization to reduce avoidable shortages.</p>
           </div>
 
           <div class="exp-kpi-card">
@@ -175,7 +167,7 @@
           <div class="exp-kpi-card">
             <div class="kpi-num">6-10</div>
             <div class="kpi-label">Staff Led</div>
-            <p class="kpi-desc">Trained and scheduled kitchen and service crews, upholding safety regulations and operational run-rates.</p>
+            <p class="kpi-desc">Trained kitchen and service staff on preparation, safety protocols, and customer service standards.</p>
           </div>
         </div>
       </div>
@@ -187,9 +179,9 @@
     <div class="section-container">
       <div class="section-header">
         <span class="section-tag">Interactive Demo</span>
-        <h2 class="section-title">FinTech Playground: Portfolio Growth Visualizer</h2>
+        <h2 class="section-title">Portfolio Growth Visualizer</h2>
         <p class="section-subtitle">
-          An interactive simulator coded from scratch. Adjust the model inputs to calculate compound growth projections and visualize the allocation of capital.
+          Adjust the inputs to estimate compound growth, compare contributions against projected gains, and review a sample asset mix.
         </p>
       </div>
 
@@ -201,7 +193,7 @@
           <div class="input-group">
             <label for="initial-investment">Initial Investment ($)</label>
             <div class="slider-val-wrapper">
-              <input type="range" id="initial-investment" min="1000" max="100000" step="1000" value="10000">
+              <input type="range" id="initial-investment" min="1000" max="100000" step="1000" value="10000" aria-describedby="initial-val">
               <span class="val-display" id="initial-val">$10,000</span>
             </div>
           </div>
@@ -209,7 +201,7 @@
           <div class="input-group">
             <label for="monthly-contribution">Monthly Deposit ($)</label>
             <div class="slider-val-wrapper">
-              <input type="range" id="monthly-contribution" min="0" max="2500" step="50" value="300">
+              <input type="range" id="monthly-contribution" min="0" max="2500" step="50" value="300" aria-describedby="monthly-val">
               <span class="val-display" id="monthly-val">$300</span>
             </div>
           </div>
@@ -217,7 +209,7 @@
           <div class="input-group">
             <label for="annual-yield">Projected Annual Return (%)</label>
             <div class="slider-val-wrapper">
-              <input type="range" id="annual-yield" min="1" max="15" step="0.5" value="7.5">
+              <input type="range" id="annual-yield" min="1" max="15" step="0.5" value="7.5" aria-describedby="yield-val">
               <span class="val-display" id="yield-val">7.5%</span>
             </div>
           </div>
@@ -225,7 +217,7 @@
           <div class="input-group">
             <label for="investment-horizon">Horizon (Years)</label>
             <div class="slider-val-wrapper">
-              <input type="range" id="investment-horizon" min="5" max="30" step="1" value="15">
+              <input type="range" id="investment-horizon" min="5" max="30" step="1" value="15" aria-describedby="horizon-val">
               <span class="val-display" id="horizon-val">15 Years</span>
             </div>
           </div>
@@ -233,16 +225,16 @@
           <div class="allocation-group">
             <label>Asset Mix Style</label>
             <div class="btn-group">
-              <button class="btn btn-select active" data-mix="conservative">Conservative</button>
-              <button class="btn btn-select" data-mix="moderate">Moderate</button>
-              <button class="btn btn-select" data-mix="aggressive">Aggressive</button>
+              <button class="btn btn-select active" data-mix="conservative" aria-pressed="true">Conservative</button>
+              <button class="btn btn-select" data-mix="moderate" aria-pressed="false">Moderate</button>
+              <button class="btn btn-select" data-mix="aggressive" aria-pressed="false">Aggressive</button>
             </div>
           </div>
         </div>
 
         <!-- Output Visuals -->
         <div class="chart-panel">
-          <div class="stats-banner">
+          <div class="stats-banner" aria-live="polite">
             <div class="metric-box">
               <span class="metric-label">Future Value</span>
               <span class="metric-val text-gradient-teal" id="fv-total">$0</span>
@@ -259,7 +251,9 @@
 
           <div class="chart-wrapper">
             <!-- Dynamic SVG Chart -->
-            <svg id="growth-chart" width="100%" height="240" viewBox="0 0 600 240" preserveAspectRatio="none">
+            <svg id="growth-chart" width="100%" height="240" viewBox="0 0 600 240" preserveAspectRatio="none" role="img" aria-labelledby="chart-title chart-desc">
+              <title id="chart-title">Projected portfolio growth chart</title>
+              <desc id="chart-desc">Line chart comparing projected future value against total contributions over the selected investment horizon.</desc>
               <!-- Grid lines will be rendered dynamically -->
               <g id="chart-grid"></g>
               <!-- Chart Line Paths -->
@@ -281,7 +275,7 @@
           </div>
 
           <!-- Dynamic Pie Allocation representation -->
-          <div class="allocation-display">
+          <div class="allocation-display" aria-live="polite">
             <h4>Suggested Target Asset Allocation</h4>
             <div class="allocation-bar" id="allocation-bar">
               <div class="allocation-segment seg-bonds" style="width: 60%">Bonds</div>
@@ -304,7 +298,7 @@
     <div class="section-container">
       <div class="section-header">
         <span class="section-tag">Competencies</span>
-        <h2 class="section-title">Core Skill Matrix</h2>
+        <h2 class="section-title">Core Skills</h2>
       </div>
 
       <div class="skills-grid">
@@ -315,7 +309,7 @@
           </div>
           <ul class="skills-list">
             <li>
-              <span class="skill-name">Financial Modelling</span>
+              <span class="skill-name">Financial Modeling</span>
               <div class="progress-track"><div class="progress-fill" style="width: 85%"></div></div>
             </li>
             <li>
@@ -391,7 +385,7 @@
     <div class="section-container">
       <div class="section-header">
         <span class="section-tag">Education</span>
-        <h2 class="section-title">Academic Credentials</h2>
+        <h2 class="section-title">Education</h2>
       </div>
 
       <div class="education-timeline">
@@ -436,7 +430,7 @@
       <div class="contact-grid">
         <div class="contact-info-panel glass">
           <h3>Contact Details</h3>
-          <p>Have an open role, project idea, or just want to chat about FinTech and Algorithms? Drop me a message.</p>
+          <p>Open to internships, part-time technical work, operations roles, and projects connected to finance, data, or software.</p>
           
           <div class="contact-methods">
             <div class="method-card">
@@ -454,7 +448,7 @@
               <div class="method-icon"><i class="fa-brands fa-linkedin"></i></div>
               <div class="method-details">
                 <span class="method-label">LinkedIn</span>
-                <a href="https://www.linkedin.com/in/badal-biswa-87a2261ba" target="_blank" class="method-val">badal-biswa-87a2261ba</a>
+                <a href="https://www.linkedin.com/in/badal-biswa-87a2261ba" target="_blank" rel="noopener" class="method-val">badal-biswa-87a2261ba</a>
               </div>
             </div>
 
@@ -462,7 +456,7 @@
               <div class="method-icon"><i class="fa-brands fa-github"></i></div>
               <div class="method-details">
                 <span class="method-label">GitHub</span>
-                <a href="https://github.com/badalbiswa" target="_blank" class="method-val">badalbiswa</a>
+                <a href="https://github.com/badalbiswa" target="_blank" rel="noopener" class="method-val">badalbiswa</a>
               </div>
             </div>
           </div>
@@ -474,19 +468,19 @@
             <div class="form-row">
               <div class="form-group">
                 <label for="form-name">Name</label>
-                <input type="text" id="form-name" placeholder="John Doe" required>
+                <input type="text" id="form-name" name="name" placeholder="John Doe" autocomplete="name" required>
               </div>
               <div class="form-group">
                 <label for="form-email">Email</label>
-                <input type="email" id="form-email" placeholder="john@example.com" required>
+                <input type="email" id="form-email" name="email" placeholder="john@example.com" autocomplete="email" required>
               </div>
             </div>
             <div class="form-group">
               <label for="form-message">Message</label>
-              <textarea id="form-message" rows="5" placeholder="Let's talk about..." required></textarea>
+              <textarea id="form-message" name="message" rows="5" placeholder="Let's talk about..." required></textarea>
             </div>
             <button type="submit" class="btn btn-primary btn-block">
-              Send Message <i class="fa-solid fa-paper-plane"></i>
+              Open Email Draft <i class="fa-solid fa-paper-plane"></i>
             </button>
           </form>
         </div>
@@ -499,10 +493,11 @@
     <div class="section-container">
       <div class="footer-bottom">
         <p>&copy; 2026 Badal Biswa. All Rights Reserved.</p>
-        <p>Built with Passion, HTML, CSS, & Javascript.</p>
+        <p>Built with HTML, CSS, and JavaScript.</p>
       </div>
     </div>
   </footer>
+</main>
 
   <!-- Notification Toast -->
   <div class="toast" id="toast"></div>
