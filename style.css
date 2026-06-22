@@ -940,6 +940,47 @@ h1, h2, h3, h4 {
   padding: 100px 0;
 }
 
+.campus-banner {
+  margin-bottom: 48px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+}
+
+.campus-photo {
+  width: 100%;
+  height: clamp(180px, 28vw, 280px);
+  object-fit: cover;
+  object-position: center 45%;
+  display: block;
+}
+
+.campus-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 24px;
+  background: linear-gradient(to top, rgba(7, 9, 14, 0.92), transparent);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.campus-label {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--color-teal-glow);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  color: var(--color-teal);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
 .education-timeline {
   display: flex;
   flex-direction: column;
